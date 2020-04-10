@@ -1,0 +1,56 @@
+warn = """                       
+
+                                 Lütfen okuyunuz!"
+      
+      "Sonuçlar sadece öneri niteliği taşımaktadır ve nihai bir sonuç/"
+      "kesinlik içermemektedir, tavsiye niteliğindedir.
+      
+      """
+print(warn)
+
+
+command = ""
+devam = False
+grs = True
+tn = True
+
+while True:
+    usname = input("Lütfen isminizi girin: ")
+    cins = 'kız' and 'erkek'
+    cins = input("Cinsiyet: ")
+    if cins != 'kız' or 'erkek'== False:
+        print("Cinsiyetinizi doğru yazdığınızdan emin olun.")
+
+    grs = input("T.C. KİMLİK NO: ")
+    if len(grs) == 11:
+        True
+    else:
+        print("Lütfen 11 haneli T.C. Kimlik Kartı numarası giriniz.")
+
+    grs1 = input("BABA ADI: ")
+
+    dy = input("Doğum tarihiniz (lütfen 4 haneli olarak giriniz.): ")
+    if len(dy) == 4:
+       True
+    elif dy <= 2020:
+        True
+    else:
+        False
+        print("Lütfen geçerli bir doğum tarihi giriniz.")
+    age = 2020 - int(dy)
+
+    tn = input("Telefon numaranızı giriniz.(başında 0(sıfır)olmadan): ")
+    if len(tn) == 10 and (tn[0]) != 0:
+        True
+    else:
+        print("Lütfen geçerli bir telefon numarası giriniz (başında sıfır olmadan).")
+
+    if grs and tn:
+        True
+        input("Lütfen teste devam etmek için devam yazınız: ")
+        if command == devam:
+            input("Son 14 gün içerisinde en uzun bulunduğunuz şehir: ")
+    while False:
+        if grs or tn == False:
+            print("Tekrar deneyin.")
+            break
